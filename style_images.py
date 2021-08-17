@@ -190,7 +190,7 @@ class ImageStylization:
                     input_batches.append(self.input_images[begin_idx:end_idx])
                 else:
                     input_batches.append(self.input_images[begin_idx:])
-                begin_pointer = end_idx
+                begin_idx = end_idx
                 end_idx += input_batch
             for input_batch, style in product(input_batches, self.style_images):
                 styled_images = self._style_images(input_batch, style, self.hub_model)
