@@ -1,0 +1,7 @@
+.ipynb_checkpoints/
+inputs/
+~inputs/.keep
+outputs/
+styles/
+~styles/.keep
+venv/
